@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1092289419576",
+    "firebase_url": "https://maytestchat-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "maytestchat",
+    "storage_bucket": "maytestchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092289419576:android:3a42efacff0ddfc014c9cd",
+        "android_client_info": {
+          "package_name": "com.example.mytestchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092289419576-8into857fto9n1qep11kntl9j4l800kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mytestchat",
+            "certificate_hash": "a49ab0fe300eaa85b4d0b20d0da560a5a49c5954"
+          }
+        },
+        {
+          "client_id": "1092289419576-d237shkub9iva1bhjbq29cjeq0cd44e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIIHMuXA5Kw511tHQHYani2AJCe3SQ-P4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092289419576-d237shkub9iva1bhjbq29cjeq0cd44e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
