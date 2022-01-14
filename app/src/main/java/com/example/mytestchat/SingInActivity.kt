@@ -63,7 +63,7 @@ class SingInActivity : AppCompatActivity() {
                 Log.d("MyLog","Google signIn error")
             }
         }
-        //lflflfdddd
+
     }
 
 }
