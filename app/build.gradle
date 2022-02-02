@@ -37,6 +37,8 @@ android {
 
 dependencies {
 
+    //picasso загрузка фото
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation platform('com.google.firebase:firebase-bom:29.0.3')
     implementation 'androidx.core:core-ktx:1.7.0'

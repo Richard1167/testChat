@@ -25,8 +25,10 @@ class SingInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySingInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+
         auth = Firebase.auth
+        launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+
             val task = GoogleSignIn.getSignedInAccountFromIntent(it.data)
             try {
                 val account = task.getResult(ApiException::class.java)
@@ -37,7 +39,10 @@ class SingInActivity : AppCompatActivity() {
                 Log.d("MyLog","ApiException")
             }
         }
-        binding.bSingIn.setOnClickListener { singInGoogle() }
+        binding.bSingIn.setOnClickListener {
+            singInGoogle()
+        }
+        checkAuthState()
     }
 
     private fun getClient(): GoogleSignInClient{
@@ -59,11 +64,18 @@ class SingInActivity : AppCompatActivity() {
         auth.signInWithCredential(credential).addOnCompleteListener {
             if(it.isSuccessful){
                 Log.d("MyLog","Google signIn done")
+                checkAuthState()
             } else{
                 Log.d("MyLog","Google signIn error")
             }
         }
+    }
 
+    private fun checkAuthState(){
+        if(auth.currentUser != null){
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
+        }
     }
 
 }
